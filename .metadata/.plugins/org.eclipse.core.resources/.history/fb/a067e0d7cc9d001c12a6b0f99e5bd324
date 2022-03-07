@@ -1,0 +1,25 @@
+package assistedPracticeProject;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileHandling {
+	public static void main(String[] args) {
+		// Writing in the file
+
+		try {
+			FileWriter f = new FileWriter(
+					"C:\\Users\\HP\\Desktop\\assignments_submission\\assignments\\Phase1\\src\\abc.txt");
+			try {
+				f.write("Bhushan is Full Stack Developer..!!");
+			} finally {
+				f.close();
+			}
+			System.out.println("Successfully Written..!! ");
+		} catch (IOException i) {
+			System.out.println(i);
+		}
+
+	}
+
+}

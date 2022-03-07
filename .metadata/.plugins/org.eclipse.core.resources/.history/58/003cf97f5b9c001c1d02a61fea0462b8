@@ -1,0 +1,32 @@
+package practiceProject;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+public class FileHandlingProject 
+{
+	private String path = "C://Users//HP//Desktop//assignments_submission//assignments//Phase1//src//practiceProject//";
+	public String[] displayFiles()
+	{
+		File fp = new File(path);
+		return fp.list();
+	}
+	public boolean addFile(String filename)
+	{
+		try 
+		{
+			return new File(path).createNewFile();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	public boolean deleteFile(String filename)
+	{
+		return new File(path+filename).delete();
+	}
+}
