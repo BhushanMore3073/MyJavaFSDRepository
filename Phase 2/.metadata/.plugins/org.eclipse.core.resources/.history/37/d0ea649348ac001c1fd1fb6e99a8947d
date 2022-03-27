@@ -1,0 +1,19 @@
+package com.dao;
+
+import com.model.User;
+
+public class UserDao 
+{
+
+	public int registerUser(User u)
+	{
+		int check = 0;
+		
+		return check;
+	}
+	public void searchFlight()
+	{
+		
+	}
+	
+}

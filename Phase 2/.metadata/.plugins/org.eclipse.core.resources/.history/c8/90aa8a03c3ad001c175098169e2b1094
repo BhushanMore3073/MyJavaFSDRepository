@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body bgcolor="#93e4fa">
+	<center>
+		<h1 style="color:#665682">Welcome To FlyAway Airlines</h1>
+		<h3 style="color:#665682">Login for Inquiry, book tickets</h3>
+		<form action="login.jsp">
+			<input type="submit" value="User" name="b1" style="background:#adc295; width: 10em; height: 5em;"> <input
+				type="submit" value="Admin" name="b1">
+		</form>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br> <img alt="Loading...." src="planebg.png" height="300"
+			width="700">
+	</center>
+</body>
+</html>

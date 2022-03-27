@@ -1,0 +1,57 @@
+package com.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class User 
+{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int userId;
+	private String userEmail;
+	private String userPassword;
+	private String userName;
+	private String userPhoneNo;
+	private String userAadhar;
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+	public String getUserPassword() {
+		return userPassword;
+	}
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getUserPhoneNo() {
+		return userPhoneNo;
+	}
+	public void setUserPhoneNo(String userPhoneNo) {
+		this.userPhoneNo = userPhoneNo;
+	}
+	public String getUserAadhar() {
+		return userAadhar;
+	}
+	public void setUserAadhar(String userAadhar) {
+		this.userAadhar = userAadhar;
+	}
+	@Override
+	public String toString() {
+		return "User [userEmail=" + userEmail + ", userPassword=" + userPassword + ", userName=" + userName
+				+ ", userPhoneNo=" + userPhoneNo + ", userAadhar=" + userAadhar + "]";
+	}
+	
+	
+}

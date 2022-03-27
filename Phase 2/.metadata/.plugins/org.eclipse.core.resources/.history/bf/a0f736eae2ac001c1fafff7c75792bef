@@ -1,0 +1,14 @@
+package com.demo;
+
+import java.util.Scanner;
+
+import com.dao.FlightDao;
+import com.dao.UserDao;
+
+public class MainClass 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(new FlightDao().getFlightByFlightId(1));
+	}
+}

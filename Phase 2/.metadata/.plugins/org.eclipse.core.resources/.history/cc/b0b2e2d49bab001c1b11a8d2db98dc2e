@@ -1,0 +1,64 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.model.FlightDetails;
+import com.utils.MyDB;
+
+public class FlightDao 
+{
+	public int addFlight(FlightDetails fd)
+	{
+		int check = 0;
+		Connection con = new MyDB().getConnection();
+		PreparedStatement pst = null;
+		String sql = "insert into flight_details("
+//1				+ "Airline_Name"
+//2				+ "Ticket_Price"
+//3				+ "Flight_Number"
+//4				+ "Source_City"
+//5				+ "Destination_City"
+//6				+ "Departure_time_from_source"
+//7				+ "Arrival_time_at_Destination"
+//8				+ "Total_Seats"
+//9				+ "Booked_Seats"
+//10			+ "Seat_Availability"
+//11			+ "Date_of_Travel"
+//12			+ "Class)"
+				+ "values(?,?,?,?,?,?,?,?,?,?,?,?)";
+		try
+		{
+			pst = con.prepareStatement(sql);
+			pst.setString(1, fd.getAirLine_Name());
+			pst.setDouble(2, fd.getTicket_Price());
+			pst.setString(3, fd.getFlight_Number());
+			pst.setString(4, fd.getSource_CityS());
+			pst.setString(5, fd.getFlightTime());
+			pst.setInt(6, fd.getFlightCapacity());
+			pst.setLong(7, fd.getFlightTicketPrice());
+			check = pst.executeUpdate();
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally 
+		{
+			new MyDB().closeConnection(pst, con);
+		}
+		
+		return check;
+	}
+	public int deleteFlight()
+	{
+		int check = 0;
+		return check;
+	}
+	public FlightDetails displayFlight()
+	{
+		return null;
+	}
+}

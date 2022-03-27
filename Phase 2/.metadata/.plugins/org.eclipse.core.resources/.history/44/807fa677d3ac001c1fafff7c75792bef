@@ -1,0 +1,37 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.model.BookFlight;
+import com.utils.MyDB;
+
+public class BookFlightDao 
+{
+	public int bookFlight(BookFlight bf, int persons)
+	{
+		int check = 0;
+		String sql = "insert into booking_table(Booking_Id,Flight_Id,User_Id)values(?,?,?)";
+		Connection con = new MyDB().getConnection();
+		PreparedStatement pst = null;
+		try
+		{
+			pst = con.prepareStatement(sql);
+			pst.setString(1, bf.getBooking_Id());
+			pst.setInt(2, bf.getFlight_Id());
+			pst.setInt(3, bf.getUser_Id());
+			check = pst.executeUpdate();
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			new MyDB().closeConnection(pst, con);
+		}
+		
+		return check;
+	}
+}

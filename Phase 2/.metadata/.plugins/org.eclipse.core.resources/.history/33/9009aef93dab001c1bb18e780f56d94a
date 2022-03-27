@@ -1,0 +1,7 @@
+package com.model;
+
+public class UserTravelHistory 
+{
+	private User user;
+	private FlightDetails flightDetails;
+}

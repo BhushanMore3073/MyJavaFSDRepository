@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.0); /* Black background with 0.5 opacity */
+  color: #f1e1b1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+  font-size: 4em;
+  top: 50%;
+  
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Booked Successfully</title>
+</head>
+<body bgcolor="#93e4fa">
+		<div class="content">
+			<center>
+				<span>Thank You<br>For Booking With Us
+				</span>
+			</center>
+		</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<form action="ProductServlet" method="post"> 
+			<table>
+				<tr>
+					<td align="right">Proudct ID</td>
+					<td><input type="number" name="pid"></td>
+				</tr>
+				<tr>
+					<td align="right">Proudct Name</td>
+					<td><input type="text" name="pname"></td>
+				</tr>
+				<tr>
+					<td align="right">Proudct Description</td>
+					<td><input type="text" name="pdescription"></td>
+				</tr>
+				<tr>
+					<td align="right">Proudct Price</td>
+					<td><input type="text" name="pprice"></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<input type="submit" name="b1" value="Display">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

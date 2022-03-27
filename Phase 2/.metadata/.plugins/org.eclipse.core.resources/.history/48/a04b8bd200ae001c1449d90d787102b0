@@ -1,0 +1,18 @@
+package com.demo;
+
+import com.dao.BookFlightDao;
+import com.dao.FlightDao;
+import com.model.BookFlight;
+import com.model.FlightDetails;
+
+public class MainClass 
+{
+	public static void main(String[] args) 
+	{
+		for(BookFlight bf : new BookFlightDao().getBookingHistory(1))
+		{
+			FlightDetails fd = new FlightDao().getFlightByFlightId(bf.getFlight_Id());
+			System.out.println(bf+"\n"+fd);
+		}
+	}
+}

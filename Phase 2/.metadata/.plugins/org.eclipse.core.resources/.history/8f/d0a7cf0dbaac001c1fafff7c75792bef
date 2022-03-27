@@ -1,0 +1,27 @@
+package com.demo;
+
+import java.util.Scanner;
+
+class IntegerList
+{
+	
+	
+	
+}
+public class MainClass 
+{
+	public static void main(String[] args) 
+	{
+		int size = new Scanner(System.in).nextInt();
+		int[] list = new int[size];
+		int count = 0;
+		while(size>0)
+		{
+			list[count++] = new Scanner(System.in).nextInt();
+			size--;
+		}
+		if(size==0)
+			System.out.println("List is Full\n"+list);
+		
+	}
+}

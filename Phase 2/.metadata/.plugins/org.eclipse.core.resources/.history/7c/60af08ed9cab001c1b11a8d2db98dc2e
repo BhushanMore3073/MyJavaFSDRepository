@@ -1,0 +1,43 @@
+package com.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dao.FlightDao;
+import com.model.FlightDetails;
+
+
+public class FlightController extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		FlightDetails flightDetails = new FlightDetails();
+		
+		flightDetails.setFlightName(request.getParameter("flightName"));
+		flightDetails.setFlightFrom(request.getParameter("flightFrom"));
+		flightDetails.setFlightTo(request.getParameter("flightTo"));
+		flightDetails.setFlightDate(request.getParameter("flightDate"));
+		flightDetails.setFlightTime(request.getParameter("flightTime"));
+		flightDetails.setFlightCapacity(Integer.parseInt(request.getParameter("flightCapacity")));
+		flightDetails.setFlightTicketPrice(Integer.parseInt(request.getParameter("flightTicketPrice")));
+		
+		if((new FlightDao().addFlight(flightDetails))>0)
+		{
+			response.getWriter().println("<h4 style=\"color:green;\">Details Added successfully</h4>");
+			request.getRequestDispatcher("AdminActivity.jsp").forward(request, response);
+		}
+		else
+		{
+			response.getWriter().println("<h4 style=\"color:red;\">Error Occured</h4>");
+			request.getRequestDispatcher("AdminActivity.jsp").include(request, response);	
+		}
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,79 @@
+package com.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class FlightDetails 
+{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int flightId;
+	private String flightName;
+	private String flightFrom;
+	private String flightTo;
+	private String flightDate;
+	private String flightTime;
+	private int flightCapacity;
+	private long flightTicketPrice;
+	
+	public int getFlightId() {
+		return flightId;
+	}
+	public void setFlightId(int flightId) {
+		this.flightId = flightId;
+	}
+	public String getFlightName() {
+		return flightName;
+	}
+	public void setFlightName(String flightName) {
+		this.flightName = flightName;
+	}
+	public String getFlightFrom() {
+		return flightFrom;
+	}
+	public void setFlightFrom(String flightFrom) {
+		this.flightFrom = flightFrom;
+	}
+	public String getFlightTo() {
+		return flightTo;
+	}
+	public void setFlightTo(String flightTo) {
+		this.flightTo = flightTo;
+	}
+	public String getFlightDate() {
+		return flightDate;
+	}
+	public void setFlightDate(String flightDate) {
+		this.flightDate = flightDate;
+	}
+	public String getFlightTime() {
+		return flightTime;
+	}
+	public void setFlightTime(String flightTime) {
+		this.flightTime = flightTime;
+	}
+	public int getFlightCapacity() {
+		return flightCapacity;
+	}
+	public void setFlightCapacity(int flightCapacity) {
+		this.flightCapacity = flightCapacity;
+	}
+	public long getFlightTicketPrice() {
+		return flightTicketPrice;
+	}
+	public void setFlightTicketPrice(long flightTicketPrice) {
+		this.flightTicketPrice = flightTicketPrice;
+	}
+	@Override
+	public String toString() {
+		return "FlightDetails [flightId=" + flightId + ", flightName=" + flightName + ", flightFrom=" + flightFrom
+				+ ", flightTo=" + flightTo + ", flightDate=" + flightDate + ", flightTime=" + flightTime
+				+ ", flightCapacity=" + flightCapacity + ", flightTicketPrice=" + flightTicketPrice + "]";
+	}
+	
+	
+}

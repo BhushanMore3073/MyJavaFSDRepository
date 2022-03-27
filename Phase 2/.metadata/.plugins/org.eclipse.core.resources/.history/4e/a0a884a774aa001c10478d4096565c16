@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Home</title>
+</head>
+<body>
+	<center>
+		<form action="SearchController" method="post">
+			<table >
+				<tr>
+					<td align="right">Choose Date</td>
+					<td><input type="date" name="date" required="required"></td>
+				</tr>
+				<tr>
+					<td align="right">source</td>
+					<td><input type="text" name="source" required="required"></td>
+				</tr>
+				<tr>
+					<td align="right">Destination</td>
+					<td><input type="text" name="destination" required="required"></td>
+				</tr>
+				<tr>
+					<td align="right">No. Of Person</td>
+					<td><input type="number" name="no_of_person" required="required"></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<input type="submit" value="search">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

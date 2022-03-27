@@ -1,0 +1,93 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.model.User;
+import com.utils.MyDB;
+
+public class UserDao 
+{
+
+	public int registerUser(User u)
+	{
+		int check = 0;
+		Connection con = new MyDB().getConnection();
+		PreparedStatement pst = null;
+		String sql = "insert into registerdetail_table(Username,Password,Fullname,Age,Email,Aadhar,Country)values(?,?,?,?,?,?,?)";
+		try
+		{
+			pst = con.prepareStatement(sql);
+			pst.setString(1, u.getUsername());
+			pst.setString(2, u.getUserPassword());
+			pst.setString(3, u.getUserFullName());
+			pst.setInt(4, u.getAge());
+			pst.setString(5, u.getUserEmail());
+			pst.setString(6, u.getUserAadhar());
+			pst.setString(7, u.getCountry());
+			
+			check = pst.executeUpdate();
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			new MyDB().closeConnection(pst, con);
+		}
+		return check;
+	}
+	public void searchFlight()
+	{
+		Connection con = new MyDB().getConnection();
+		PreparedStatement pst = null;
+		ResultSet rs = null;
+		String sql = "select * from flightdetail_table where Source_City=? and Destination_City=? and Date_of_Travel=?";
+		try
+		{
+			pst = con.prepareStatement(sql);
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			new MyDB().closeConnection(rs, pst, con);
+		}
+	}
+	public int checkUserLogin(String username,String password)
+	{
+		int check = 0;
+		Connection con = new MyDB().getConnection();
+		PreparedStatement pst = null;
+		String sql = "select * from login_table where username=?";
+		ResultSet rs = null;
+		
+		try
+		{
+			pst = con.prepareStatement(sql);
+			pst.setString(1, username);
+			rs = pst.executeQuery();
+			if(rs!=null)
+			{
+				String user = (String)rs.getObject("username");
+				String pass = (String)rs.getObject("password");
+				if(pass == password)
+					check = 1;
+			}
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			new MyDB().closeConnection(rs, pst, con);
+		}
+		return check;
+	}
+}

@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2 align="right">
+		Welcome
+		<%=request.getAttribute("admin")%></h2>
+	<div align="right">
+		<a href="AdminController?adminLogin=logout">logout</a>
+	</div>
+	<center>
+		<h3>Add Flight Details</h3>
+		<hr>
+		<form action="FlightController" method="post">
+			<table>
+				<tr>
+					<td align="right">Airline Name :</td>
+					<td><input type="text" name="AirLine_Name"></td>
+				</tr>
+				<tr>
+					<td align="right">Flight Number :</td>
+					<td><input type="text" name="Flight_Number"></td>
+				</tr>
+				<tr>
+					<td align="right">Source City :</td>
+					<td><input type="text" name="Source_City"></td>
+				</tr>
+				<tr>
+					<td align="right">Destination City :</td>
+					<td><input type="text" name="Destination_City"></td>
+				</tr>
+				<tr>
+					<td align="right">Date of Travel:</td>
+					<td><input type="date" name="Date_of_Travel"></td>
+				</tr>
+				<tr>
+					<td align="right">Departure Time :</td>
+					<td><input type="datetime" name="Departure _time_from_source"></td>
+				</tr>
+				<tr>
+					<td align="right">Arrival Time :</td>
+					<td><input type="datetime" name="Arrival _time_at_destination"></td>
+				</tr>
+				<tr>
+					<td align="right">Class</td>
+					<td><input type="text" name="clases"></td>
+				</tr>
+				<tr>
+					<td align="right">Total Seats :</td>
+					<td><input type="number" name="Total_Seats"></td>
+				</tr>
+				<tr>
+					<td align="right">Ticket Price</td>
+					<td><input type="number" name="Ticket_Price"></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<input type="submit" value="Add" name="b1">
+						<input type="submit" value="Update"name="b1">
+						<input type="submit" value="Delete" name="b1">
+					</td>
+				</tr>
+			</table>
+		</form>
+		<hr>
+	</center>
+</body>
+</html>

@@ -1,0 +1,81 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.util.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+import com.model.FlightDetails;
+import com.utils.MyDB;
+
+public class FlightDao 
+{
+	public int addFlight(FlightDetails fd)
+	{
+		int check = 0;
+		Connection con = new MyDB().getConnection();
+		PreparedStatement pst = null;
+		String sql = "insert into flightdetail_table("
+				+ "Airline_Name"
+				+ "Ticket_Price"
+				+ "Flight_Number"
+				+ "Source_City"
+				+ "Destination_City"
+				+ "Departure_time_from_source"
+				+ "Arrival_time_at_Destination"
+				+ "Total_Seats"
+				+ "Date_of_Travel"
+				+ "Class)"
+				+ "values(?,?,?,?,?,?,?,?,?,?)";
+		try
+		{
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			DateFormat formt = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
+			DateFormat Tformt = new SimpleDateFormat("yyyy-MM-dd");
+			Date Ddate = null,ADate = null,TDate = null;
+			try {
+				ADate = formt.parse(fd.getArrival_time_at_Destination());
+				Ddate = formt.parse(fd.getDeparture_time_from_source());
+				TDate = Tformt.parse(fd.getDate_of_Travel());
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			pst = con.prepareStatement(sql);
+			pst.setString(1, fd.getAirLine_Name());
+			pst.setDouble(2, fd.getTicket_Price());
+			pst.setString(3, fd.getFlight_Number());
+			pst.setString(4, fd.getSource_City());
+			pst.setString(5, fd.getDestination_City());
+			pst.setString(6, format.format(Ddate));
+			pst.setString(7, format.format(ADate));
+			pst.setInt(8, fd.getTotal_Seats());
+			pst.setString(9, format.format(TDate));
+			pst.setString(10, fd.getClases());
+			check = pst.executeUpdate();
+			
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally 
+		{
+			new MyDB().closeConnection(pst, con);
+		}
+		
+		return check;
+	}
+	public int deleteFlight()
+	{
+		int check = 0;
+		return check;
+	}
+	public FlightDetails displayFlight()
+	{
+		return null;
+	}
+}

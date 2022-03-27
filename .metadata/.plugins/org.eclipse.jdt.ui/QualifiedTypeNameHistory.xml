@@ -20,4 +20,5 @@
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.io.Writer"/>
     <fullyQualifiedTypeName name="assigments.FileOperations"/>
+    <fullyQualifiedTypeName name="assigments.OverloadMethod"/>
 </qualifiedTypeNameHistroy>

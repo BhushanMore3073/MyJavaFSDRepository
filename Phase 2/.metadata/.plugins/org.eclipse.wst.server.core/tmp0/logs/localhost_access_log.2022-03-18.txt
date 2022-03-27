@@ -1,0 +1,14 @@
+127.0.0.1 - - [18/Mar/2022:11:42:22 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:11:42:25 +0530] "GET /GetAndPostDifference/index.html HTTP/1.1" 200 498
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:11:42:25 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:11:42:44 +0530] "GET /GetAndPostDifference/GETHandler? HTTP/1.1" 200 28
+127.0.0.1 - - [18/Mar/2022:11:43:47 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:11:43:48 +0530] "GET /GetAndPostDifference/index.html HTTP/1.1" 200 496
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:11:43:54 +0530] "GET /GetAndPostDifference/GETHandler?name=Bhushan HTTP/1.1" 200 31
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:11:44:09 +0530] "POST /GetAndPostDifference/POSTHandler HTTP/1.1" 200 29
+127.0.0.1 - - [18/Mar/2022:12:28:41 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:12:28:42 +0530] "GET /GenericServletsAssistedProjects/index.html HTTP/1.1" 200 322
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:12:28:50 +0530] "POST /GenericServletsAssistedProjects/GenericServletDemo HTTP/1.1" 200 45
+127.0.0.1 - - [18/Mar/2022:12:51:33 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:12:51:33 +0530] "GET /ServletUsingInterface/index.html HTTP/1.1" 200 297
+0:0:0:0:0:0:0:1 - - [18/Mar/2022:12:51:40 +0530] "GET /ServletUsingInterface/FirstServlet?name=Bhushan HTTP/1.1" 200 36

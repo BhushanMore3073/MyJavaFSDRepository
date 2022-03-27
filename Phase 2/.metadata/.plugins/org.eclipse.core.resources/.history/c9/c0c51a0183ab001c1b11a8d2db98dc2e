@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2 align="right">
+		Welcome
+		<%=request.getAttribute("admin")%></h2>
+	<div align="right">
+		<a href="AdminController?adminLogin=logout">logout</a>
+	</div>
+	<center>
+		<h3>Add Flight Details</h3>
+		<form action="AddFlights" method="post">
+			<table>
+				<tr>
+					<td align="right">FLight Name :</td>
+					<td><input type="text" name="flightName"></td>
+				</tr>
+				<tr>
+					<td align="right">FLight From :</td>
+					<td><input type="text" name="flightFrom"></td>
+				</tr>
+				<tr>
+					<td align="right">FLight To :</td>
+					<td><input type="text" name="flightTo"></td>
+				</tr>
+				<tr>
+					<td align="right">FLight Date :</td>
+					<td><input type="datetime-local" name="flightDate"></td>
+				</tr>
+				<tr>
+					<td align="right">FLight Time :</td>
+					<td><input type="text" name="flightTime"></td>
+				</tr>
+				<tr>
+					<td align="right">FLight Capacity :</td>
+					<td><input type="text" name="flightCapacity"></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<input type="submit" value="Add" name="b1">
+						<input type="submit" value="Update"name="b1">
+						<input type="submit" value="Delete" name="b1">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

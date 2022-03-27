@@ -1,0 +1,12 @@
+127.0.0.1 - - [28/Mar/2022:00:01:08 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [28/Mar/2022:00:01:10 +0530] "GET /UserLoginPracticeProject1/login.html HTTP/1.1" 200 403
+127.0.0.1 - - [28/Mar/2022:00:01:10 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [28/Mar/2022:00:04:39 +0530] "POST /UserLoginPracticeProject1/ValidateLogin HTTP/1.1" 200 187
+127.0.0.1 - - [28/Mar/2022:00:06:03 +0530] "POST /UserLoginPracticeProject1/ValidateLogin HTTP/1.1" 200 172
+127.0.0.1 - - [28/Mar/2022:00:14:11 +0530] "GET /ProductDetailsPracticeProject2/index.html HTTP/1.1" 200 438
+127.0.0.1 - - [28/Mar/2022:00:14:11 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [28/Mar/2022:00:15:13 +0530] "POST /ProductDetailsPracticeProject2/ProductServlet HTTP/1.1" 200 176
+127.0.0.1 - - [28/Mar/2022:00:32:10 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [28/Mar/2022:00:32:12 +0530] "GET /ProductDetailsPracticeProject4/index.jsp HTTP/1.1" 200 813
+127.0.0.1 - - [28/Mar/2022:00:33:08 +0530] "POST /ProductDetailsPracticeProject4/DisplayProduct HTTP/1.1" 200 285
+127.0.0.1 - - [28/Mar/2022:00:33:47 +0530] "POST /ProductDetailsPracticeProject4/DisplayProduct HTTP/1.1" 200 285

@@ -1,0 +1,23 @@
+package com.model;
+
+import javax.persistence.OneToMany;
+
+public class UserTravelHistory 
+{
+	@OneToMany
+	private User user;
+	@OneToMany
+	private FlightDetails flightDetails;
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public FlightDetails getFlightDetails() {
+		return flightDetails;
+	}
+	public void setFlightDetails(FlightDetails flightDetails) {
+		this.flightDetails = flightDetails;
+	}
+}

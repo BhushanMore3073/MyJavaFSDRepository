@@ -1,0 +1,53 @@
+package com.controller;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dao.FlightDao;
+import com.model.FlightDetails;
+
+
+public class FlightController extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		FlightDetails flightDetails = new FlightDetails();
+		String dt = request.getParameter("Departure_time_from_source").replace('T',' ');
+		String at = request.getParameter("Arrival_time_at_destination").replace('T', ' ');
+		flightDetails.setAirLine_Name(request.getParameter("AirLine_Name"));
+		flightDetails.setTicket_Price(Double.parseDouble(request.getParameter("Ticket_Price")));
+		flightDetails.setSource_City(request.getParameter("Source_City"));
+		flightDetails.setDestination_City(request.getParameter("Destination_City"));
+		flightDetails.setDeparture_time_from_source(dt);
+		flightDetails.setArrival_time_at_Destination(request.getParameter(at));
+		flightDetails.setFlight_Number(request.getParameter("Flight_Number"));
+		flightDetails.setDate_of_Travel(request.getParameter("Date_of_Travel"));
+		flightDetails.setTotal_Seats(Integer.parseInt(request.getParameter("Total_Seats")));
+		flightDetails.setClases(request.getParameter("clases"));
+		
+		System.out.println(flightDetails.getDeparture_time_from_source());
+		
+		SimpleDateFormat format = new           SimpleDateFormat("yyyy-MM-dd HH:mm") ;
+		String currentDateTime = format.format(flightDetails.getDeparture_time_from_source());
+		System.out.println(currentDateTime);
+//		if((new FlightDao().addFlight(flightDetails))>0)
+//		{
+//			response.getWriter().println("<h4 style=\"color:green;\">Details Added successfully</h4>");
+//			request.getRequestDispatcher("AdminActivity.jsp").forward(request, response);
+//		}
+//		else
+//		{
+//			response.getWriter().println("<h4 style=\"color:red;\">Error Occured</h4>");
+//			request.getRequestDispatcher("AdminActivity.jsp").include(request, response);	
+//		}
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

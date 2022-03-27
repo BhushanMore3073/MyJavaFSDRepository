@@ -1,0 +1,49 @@
+<%@page import="com.model.User"%>
+<%@page import="com.model.FlightDetails"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+</style>
+<title>Payment</title>
+</head>
+<body>
+	<%
+	FlightDetails fd = (FlightDetails) session.getAttribute("fd");
+	User u = (User) session.getAttribute("u");
+	%>
+	<center>
+		<div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<span style="font-style: oblique;margin:10px; font-size: 30px;font-family: monospace;"><%=u.getUserFullName()%></span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<input type="radio" name="optradio" checked>
+							</div>
+							<div>
+								<span>Total amount due</span>
+								<div>
+									<span>Rs.</span><span><%=fd.getTicket_Price()%></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-between px-3 pt-4 pb-3">
+						<a href="BookFlightController?b1=Confirm"><button
+								type="submit">Pay Amount</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+</body>
+</html>

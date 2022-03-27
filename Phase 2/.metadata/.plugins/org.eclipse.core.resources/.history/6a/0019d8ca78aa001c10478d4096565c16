@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<!-- To Handle User Login -->
+<%
+if(request.getParameter("User").equals("User"))
+{
+%>
+<form action="UserController">
+<table>
+<tr>
+<td align="right">Username</td>
+<td><input type="email" name="userEmail"></td>
+</tr>
+<tr>
+<td align="right">Password</td>
+<td><input type="password" name="userPassword"></td>
+</tr>
+</table>
+</form>
+<%
+}
+%>
+<!-- To Handle Admin Login -->
+<%
+if(request.getParameter("Admin").equals("Admin"))
+{
+%>
+<%
+}
+%>
+</center>
+</body>
+</html>

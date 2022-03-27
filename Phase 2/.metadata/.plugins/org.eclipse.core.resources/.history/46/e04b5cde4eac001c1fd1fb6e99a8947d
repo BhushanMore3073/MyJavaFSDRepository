@@ -1,0 +1,39 @@
+package com.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dao.UserDao;
+
+@WebServlet("/UserController")
+public class UserController extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		if(request.getParameter("userLogin").equals("Login"))
+		{
+			if(new UserDao().checkUserLogin(request.getParameter("username"), request.getParameter("username"))>0)
+				request.getRequestDispatcher("UserActivity.jsp").forward(request, response);
+			else
+			{
+				response.getWriter().println("<center><h3 style=\"color:red;\">Check Your Credentials</h3></center>");
+				request.getRequestDispatcher("login.jsp?b1=User").include(request, response);
+			}
+		}
+		if(request.getParameter("userLogin").equals("Register"))
+		{
+			request.getRequestDispatcher("UserRegistration.jsp").forward(request, response);
+		}
+		if(request.getParameter("userLogin").equals("Forgot"))
+		{
+			request.getRequestDispatcher("forgot.jsp?b1=UserForgot")
+		}
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

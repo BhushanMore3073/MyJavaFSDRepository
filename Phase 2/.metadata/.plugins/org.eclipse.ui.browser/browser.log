@@ -1,0 +1,110 @@
+
+Mar 24, 2022 22:19:24.176 NEW SESSION
+Mar 24, 2022 22:19:24.177 [Child 16660, MediaDecoderStateMachine #1] WARNING: e34fe80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:19:24.177 [Child 16660, MediaDecoderStateMachine #1] WARNING: e34fe80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:19:53.314 
+Mar 24, 2022 22:19:53.319 ###!!! [Parent][PBackgroundParent] Error: Send(msgname=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+Mar 24, 2022 22:19:53.319 
+Mar 24, 2022 22:19:53.319 
+Mar 24, 2022 22:19:53.319 ###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+Mar 24, 2022 22:19:53.319 
+Mar 24, 2022 22:19:53.319 
+Mar 24, 2022 22:19:53.319 ###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+Mar 24, 2022 22:19:53.319 
+Mar 24, 2022 22:19:53.319 
+Mar 24, 2022 22:19:53.319 ###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+Mar 24, 2022 22:19:53.319 
+Mar 24, 2022 22:20:51.866 [Child 16660, MediaDecoderStateMachine #1] WARNING: e39f000 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:20:51.891 [Child 16660, MediaDecoderStateMachine #1] WARNING: e39f000 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:22:10.701 [Child 16660, MediaDecoderStateMachine #2] WARNING: 1220e080 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:22:10.701 [Child 16660, MediaDecoderStateMachine #2] WARNING: 1220e080 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:22:11.263 [Child 16660, MediaDecoderStateMachine #2] WARNING: 1220e080 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:23:00.549 [Child 16660, MediaDecoderStateMachine #2] WARNING: acdde00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:23:00.579 [Child 16660, MediaDecoderStateMachine #2] WARNING: acdde00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:25:55.909 [Child 16660, MediaDecoderStateMachine #3] WARNING: e41a780 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:27:27.523 [Child 16660, MediaDecoderStateMachine #3] WARNING: 148e0280 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:28:06.978 [Child 16660, MediaDecoderStateMachine #3] WARNING: 1487d200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:28:06.984 [Child 16660, MediaDecoderStateMachine #3] WARNING: 1487d200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:29:51.210 [Child 16660, MediaDecoderStateMachine #4] WARNING: e30df00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:29:51.227 [Child 16660, MediaDecoderStateMachine #4] WARNING: e30df00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:36:25.237 [Child 16660, MediaDecoderStateMachine #6] WARNING: e30d080 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:36:25.239 [Child 16660, MediaDecoderStateMachine #6] WARNING: e30d080 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:40:39.90 [Child 16660, MediaDecoderStateMachine #8] WARNING: 1acca300 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:40:39.90 [Child 16660, MediaDecoderStateMachine #8] WARNING: 1acca300 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:41:04.925 [Child 16660, MediaDecoderStateMachine #8] WARNING: 122c2b00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:41:04.951 [Child 16660, MediaDecoderStateMachine #8] WARNING: 122c2b00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:41:12.19 [Child 16660, MediaDecoderStateMachine #8] WARNING: e41bd80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:41:31.233 [Child 16660, MediaDecoderStateMachine #8] WARNING: 122dbc80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:41:31.233 [Child 16660, MediaDecoderStateMachine #8] WARNING: 122dbc80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:43:19.568 [Child 16660, MediaDecoderStateMachine #9] WARNING: 1220d580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:43:19.571 [Child 16660, MediaDecoderStateMachine #9] WARNING: 1220d580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:47:24.311 [Child 16660, MediaDecoderStateMachine #10] WARNING: 148c2100 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:47:24.311 [Child 16660, MediaDecoderStateMachine #10] WARNING: 148c2100 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:47:37.910 [Child 16660, MediaDecoderStateMachine #10] WARNING: 148b4900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:47:37.910 [Child 16660, MediaDecoderStateMachine #10] WARNING: 148b4900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:48:32.839 [Child 16660, MediaDecoderStateMachine #10] WARNING: 14ebe100 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:48:52.860 [Child 16660, MediaDecoderStateMachine #10] WARNING: 12476d80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:48:52.874 [Child 16660, MediaDecoderStateMachine #10] WARNING: 12476d80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:53:55.532 [Child 16660, MediaDecoderStateMachine #13] WARNING: 122c2a80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 22:53:55.533 [Child 16660, MediaDecoderStateMachine #13] WARNING: 122c2a80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:02:14.726 [Child 16660, MediaDecoderStateMachine #14] WARNING: 1220ab00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:02:14.746 [Child 16660, MediaDecoderStateMachine #14] WARNING: 1220ab00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:03:16.162 [Child 16660, MediaDecoderStateMachine #14] WARNING: 148a7c00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:03:16.222 [Child 16660, MediaDecoderStateMachine #14] WARNING: 148a7c00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:03:41.259 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14ea1c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:04:07.560 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14896b00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:04:07.561 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14896b00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:04:10.296 [Child 16660, MediaDecoderStateMachine #14] WARNING: 148b4e00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:04:45.452 [Child 16660, MediaDecoderStateMachine #14] WARNING: 174b2a00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:04:45.453 [Child 16660, MediaDecoderStateMachine #14] WARNING: 174b2a00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:05:06.786 [Child 16660, MediaDecoderStateMachine #14] WARNING: ef09200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:05:06.807 [Child 16660, MediaDecoderStateMachine #14] WARNING: ef09200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:05:52.637 [Child 16660, MediaDecoderStateMachine #14] WARNING: 174fd980 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:05:52.680 [Child 16660, MediaDecoderStateMachine #14] WARNING: 174fd980 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:06:02.979 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14ebe200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:06:03.604 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14ebe200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:06:04.394 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14ebe200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:06:08.569 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14e33580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:06:09.477 [Child 16660, MediaDecoderStateMachine #14] WARNING: 14e33580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:08:22.615 [Child 16660, MediaDecoderStateMachine #15] WARNING: 1483cf80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:08:22.639 [Child 16660, MediaDecoderStateMachine #15] WARNING: 1483cf80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:08:24.294 [Child 16660, MediaDecoderStateMachine #15] WARNING: 1483cf80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:08:33.331 [Child 16660, MediaDecoderStateMachine #15] WARNING: ef43100 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:08:34.93 [Child 16660, MediaDecoderStateMachine #15] WARNING: ef43100 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:09:06.25 [Child 16660, MediaDecoderStateMachine #15] WARNING: 174caa80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:09:06.33 [Child 16660, MediaDecoderStateMachine #15] WARNING: 174caa80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:14:07.588 [Child 16660, MediaDecoderStateMachine #16] WARNING: e39fa80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:14:07.588 [Child 16660, MediaDecoderStateMachine #16] WARNING: e39fa80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:18:54.471 [Child 16660, MediaDecoderStateMachine #17] WARNING: 174fd180 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:25:21.274 [Child 16660, MediaDecoderStateMachine #18] WARNING: 12202a00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 24, 2022 23:25:21.274 [Child 16660, MediaDecoderStateMachine #18] WARNING: 12202a00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+
+Mar 25, 2022 10:30:43.120 NEW SESSION
+Mar 25, 2022 10:30:43.120 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:48:51.102 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:49:18.751 [Child 8432, MediaDecoderStateMachine #1] WARNING: 11922d00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:330
+Mar 25, 2022 10:52:02.584 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.599 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.606 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.608 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.614 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.623 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.632 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.633 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.638 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.638 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.639 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.640 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.641 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.642 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.646 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.649 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.650 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.658 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 10:52:02.666 [Parent 12144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Mar 25, 2022 11:05:15.747 
+Mar 25, 2022 11:05:15.747 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+Mar 25, 2022 11:05:15.748 
+
+Mar 27, 2022 15:38:05.00 NEW SESSION
+Mar 27, 2022 15:38:05.01 [Parent 9784, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
