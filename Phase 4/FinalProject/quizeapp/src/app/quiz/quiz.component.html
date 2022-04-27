@@ -1,0 +1,25 @@
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-6 offset-2">
+            <p class="text-center">{{currentQuiz + 1 }} of {{quizzes.length}}</p>
+            <h2>{{quizzes[0].question}}</h2>
+            <ul class="list-group" *ngFor="let quiz of quizzes[currentQuiz].answer">
+                <label for="options">
+                    <li class="list-group-item" appBackground [correctAnswer]="quiz.correct">
+                        <input type="radio" name="options" (change)="onAnswer(quiz.correct)" [disabled]="answerSelected">
+                        {{quiz.option}}
+                    </li>
+                </label>
+            </ul>
+        </div>
+        <div class="col-md-6 offset-2 center p-3">
+            <button class="btn btn-primary btn-block" (click)="showResult()">Submit</button>
+            <div *ngIf="result">
+                each question is of 2 marks <br>
+                Correct Answers : {{correctAnswers}} <br>
+                Incorrect Ansers : {{incorrectAnswers}} <br>
+                Total Marks : {{correctAnswers*2}}
+            </div>
+        </div>
+    </div>
+</div>
